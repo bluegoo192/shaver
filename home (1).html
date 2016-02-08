@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shaver</title>
+<link rel="stylesheet" href="home.css" type="text/css" />
+<!-- Additional fonts v -->
+<!--<link href='http://fonts.googleapis.com/css?family=Exo:200' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>-->
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<section class="screen">
+<!-- The intro page -->
+<table id = "cssTable">
+     <tr>
+     	<td>
+               <a href="http://imgur.com/27UFhJm"><img src="http://i.imgur.com/27UFhJm.png" title="Shaver Logo" /></a>
+     		<p id="css-logo">Welcome To Shaver</p>
+     	</td>
+     </tr>
+ </table>
+</section>
+
+<section class="screen">
+<!-- The upload page -->
+<table id = "cssTable">
+     <tr>
+     	<td>
+		<form id="upload" action="upload.php" method="POST" enctype="multipart/form-data">
+			<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+ 	  	 	<div class="button-green"><input class="file-upload" type="file" onchange="App.handleFileUpload(event)" onchange="checkUpload">Upload File</div>
+ 	 	  <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+		</form>
+	</td>
+     </tr>
+ </table>
+</section>
+
+<section class="screen">
+<!-- The check page -->
+	<table id = "cssTable">
+     <tr>
+     	<td>
+     		<p id="css-logo">Search known files to compare</p>
+     		<section class="main">
+	 <form class="search" method="post" action="index.html" >
+		 <input type="text" name="q" placeholder="Search..." />
+		 <ul class="results" >
+			 <li><a href="index.html">Search Result #1<br /><span>Description...</span></a></li>
+			 <li><a href="index.html">Search Result #2<br /><span>Description...</span></a></li>
+	 		<li><a href="index.html">Search Result #3<br /><span>Description...</span></a></li>
+         	<li><a href="index.html">Search Result #4</a></li>
+		 </ul>
+	 </form>
+</section>
+     	</td>
+     </tr>
+ </table>
+</section>
+
+<section class="screen">
+<!-- The final page -->
+	<table id = "cssTable">
+     <tr>
+     	<td>
+     		<p id="css-logo">Congratulations! No errors found.</p>
+     	</td>
+     </tr>
+ </table>
+</section>
+
+<footer>
+<!-- The footer.  No shit, Sherlock -->
+               <p id="css-text">Created by Michael Qu, Arthur Silverstein, George Lee, and Daniel Tapia</p>
+</footer>
+
+</body>
+</html>

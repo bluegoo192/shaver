@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shaver</title>
+<link rel="stylesheet" href="home.css" type="text/css" />
+<!-- Additional fonts v -->
+<!--<link href='http://fonts.googleapis.com/css?family=Exo:200' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>-->
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+<script src="./Sha1Hasher.js"></script>
+<script src="./sha.js"></script>
+<script src="./papaparse.js"></script>
+<script src="./utf-8.js"></script>
+
+
+<script>
+
+function showUser(str) {
+    
+  if (str=="") {
+    document.getElementById("results").innerHTML="";
+    return;
+  } 
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("results").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+</head>
+<body>
+
+<div class="screen">
+<!-- The intro page -->
+<table id = "cssTable">
+     <tr>
+     	<td>
+     		<p id="css-logo">Welcome To Shaver</p>
+     	</td>
+     </tr>
+ </table>
+</div>
+
+<div class="screen">
+<!-- The upload page -->
+<table id = "cssTable">
+     <tr>
+     	<td>
+		
+<input type="file" id="files" name="file" />
+<span class="readBytesButtons">
+
+  <button id = "hasher">Submit</button>
+  <script type="text/javascript">compare('8cb2237d0679ca88db6464eac60da96345513964')</script>
+<!-- 
+  <form action="javascript:compare()" class="dropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form> -->
+
+
+</span>
+<div id="byte_range"></div>
+<div id="byte_content"></div>
+<script>
+
+</script>
+
+
+
+	</td>
+     </tr>
+ </table>
+</div>
+
+<div class="screen">
+<!-- The check page -->
+	<table id = "cssTable">
+     <tr>
+     	<td>
+     		<p id="css-logo">Search known files to compare</p>
+     		<section class="main">
+	        <form class="search" method="post">
+		    <input id="search" type="text" onkeypress="showUser(this.value)" name="q" placeholder="Search..." />
+		    <ul id="results" >
+			 <!--    <li><a href="index.html">Search Result #1<br /><span>Description...</span></a></li>
+			    <li><a href="index.html">Search Result #2<br /><span>Description...</span></a></li>
+	 		    <li><a href="index.html">Search Result #3<br /><span>Description...</span></a></li>
+         	    <li><a href="index.html">Search Result #4</a></li> -->
+		    </ul>
+	 </form>
+</section>
+     	</td>
+     </tr>
+ </table>
+</div>
+
+<div class="screen">
+<!-- The final page -->
+	<table id = "cssTable">
+     <tr>
+     	<td>
+     		<p id="css-logo">Congratulations! No errors found.</p>
+     	</td>
+     </tr>
+ </table>
+</div>
+
+<footer>
+<!-- The footer.  No shit, Sherlock -->
+<p id="css-text">Created by Michael Qu, Arthur Silverstein, George Lee, and Daniel Tapia</p>
+</footer>
+
+</body>
+</html>

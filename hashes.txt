@@ -1,0 +1,10 @@
+C:\Riot Games\League of Legends\RADS\projects\lol_air_client\releases\0.0.1.112\deploy\Adobe AIR\Versions\1.0\Adobe AIR.dll
+37CDC66676EB82014087EE881D3ABF3EA6973C5E
+C:\Riot Games\League of Legends\RADS\projects\lol_air_client\releases\0.0.1.112\deploy\Adobe AIR\Versions\1.0\Resources\Adobe AIR.vch
+EC41E5CB44AFD8BBC5707CD765351AA9AF642D24
+C:\Riot Games\League of Legends\RADS\projects\lol_air_client\releases\0.0.1.112\deploy\Adobe AIR\Versions\1.0\Resources\AdobeCP.dll
+DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+C:\Riot Games\League of Legends\RADS\projects\lol_air_client\releases\0.0.1.112\deploy\Adobe AIR\Versions\1.0\Resources\adobecp.vch
+DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+C:\Riot Games\League of Legends\RADS\projects\lol_air_client\releases\0.0.1.112\deploy\Adobe AIR\Versions\1.0\Resources\AdobeCP15.dll
+D303F6049FBF1CAA552DF51075FAEE1C7DACDD4B
